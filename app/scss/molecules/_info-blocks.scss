@@ -1,0 +1,135 @@
+.info-blocks{
+
+    $self: &;
+
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 0 14px 0;
+    margin: 0 0 0 0;
+    position: relative;
+
+    @media(min-width:768px){
+        flex-direction: row;
+        padding: 0 14px 24px 14px;
+        margin: 50px 0 0 0;
+    }
+
+    &:after{
+
+        display: none;
+
+        @media(min-width:768px){
+            
+            content: "";
+            border-bottom: 1px solid $cleargray;
+            width: calc(100% - 28px);
+            position: absolute;
+            bottom: 0;
+            left: 14px;
+            display: block;
+        }
+    }
+
+    &__left{
+
+        width: 100%;
+        padding: 0 0 37px 0;
+
+        @media(min-width:768px){
+            width: calc(100% - 361px);
+            padding: 0 37px 0 0;
+        }
+
+        img{
+            width: 100%;
+        } 
+
+        &-content{
+
+            padding: 14px 14px 0 14px;
+
+            @media(min-width:768px){
+                padding: 18px 0 0 0;
+            }
+        }
+    }
+
+    &__right{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        position: relative;
+
+        @media(min-width:768px){
+            width: 324px;
+            gap:36px;
+        }
+
+        &:after{
+
+            content: "";
+            position: absolute;
+            width:calc(100% - 28px);
+            height: auto;
+            border-top: 1px solid $cleargray;
+            left:14px;
+            top: -18px;
+            z-index: -1;
+
+            @media(min-width:768px){
+                
+                border-left: 1px solid $cleargray;
+                border-top:0;
+                border-bottom: 0;
+                height: 100%;
+                top:0;
+                left: -20px;
+            }
+        }
+
+        &-element{
+
+            display:flex;
+            gap: 18px;
+            padding: 0 14px;
+            position: relative;
+
+            @media(min-width:768px){
+               padding:0;
+            }
+
+            &:after{
+
+                content: "";
+                border-bottom: 1px solid $cleargray;
+                width: calc(100% - 28px);
+                position: absolute;
+                bottom: -15px;
+                
+                @media(min-width:768px){
+                    bottom: -16px;
+                }
+            }
+
+            &:last-child{
+
+                &:after{
+                    display: none;
+                }
+            }
+
+            &-image{
+
+            }
+
+            &-content{
+                padding: 8px 0 0 0;
+            }
+        }
+
+        
+    }
+}

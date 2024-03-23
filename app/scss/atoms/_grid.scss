@@ -1,0 +1,26 @@
+.grid{
+
+    $self: &;
+
+    &-container{
+        width:100%;
+        max-width:calc(1000px + 28px);
+        margin: 0 auto;
+
+        &--fluid{
+            max-width:100%;
+
+            .grid-row{
+                padding:0;
+            }
+        }
+    }
+
+    &-row{
+        padding: 0 14px;
+    }
+
+    &-col{
+
+    }
+}

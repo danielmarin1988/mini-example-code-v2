@@ -1,0 +1,11 @@
+.container{ 
+    
+    $self: &;
+
+    margin: 0 auto;
+    width: 100%;
+
+    &--xl{
+        max-width: 1000px;
+    }
+}

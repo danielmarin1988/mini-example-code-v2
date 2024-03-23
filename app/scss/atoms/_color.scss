@@ -1,0 +1,19 @@
+.color{
+
+    $self:&;
+
+    &-element{
+
+        &--lightgray{
+            color: $lightgray;
+        }
+
+        &--dimgray{
+            color: $dimgray;
+        }
+    }
+
+    &-bg{
+
+    }
+}
